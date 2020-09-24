@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown-Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <script>
+        function inic() {
+            document.querySelector('.cont_modal').className = 'cont_modal cont_modal_active';
+        }
+        window.onload = function () {
+            inic();
+        }
+    </script>
+    <div class="cont_modal">
+        <div class="cont_text_detalles">
+            <div class="cont_menu_ico">
+                <a href="#">
+                    <i class="material-icons">&#xE5D2;
+                </a>
+                </i>
+            </div>
+            <div class="cont_text_info">
+                <h1 id="title">Count Down JavaScript</h1>
+                <p id="details">Share this site to other people.</p>
+                <a href="#" class="btn_unlocked" id="btn" onclick="copyToClipBoard()">Share</a>
+            </div>
+            <div class="cont_list_tiempo">
+                <ul>
+                    <li>
+                        <div class="cont_porct_1">
+                            <p id="Day">00</p>
+                            <span>DAYS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont_porct_2">
+                            <p id="Hour">00</p>
+                            <span>HOURS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont_porct_3">
+                            <p id="Min">00</p>
+                            <span>MIN</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont_porct_4">
+                            <p id="Sec">00</p>
+                            <span>SEC</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p id="Credits">Design used: <a href="https://codepen.io/THEORLAN2/pen/GoarNy">https://codepen.io/THEORLAN2/pen/GoarNy</a></p>
+</body>
+</html>
